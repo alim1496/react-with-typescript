@@ -27,6 +27,7 @@ const Form: FC<Props> = ({ seriesList, setSeriesList }) => {
     const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
         const { name, genre, cover, imdb, seasons } = input;
         const series = { name, genre, cover, imdb, seasons };
+        if(!name && !genre && !cover && !imdb && !seasons) return;
         setSeriesList([...seriesList, series]);
         setInput({
             name: "",

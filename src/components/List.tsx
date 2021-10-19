@@ -9,6 +9,7 @@ const List:FC<SeriesProps> = ({seriesList}) => (
                 <p><b>{series.name}</b></p>
                 <p>{series.genre}</p> 
                 <p>{series.seasons} seasons</p>
+                <p>★★★★★ {series.imdb}</p>
             </div>
         ))}
     </div>
